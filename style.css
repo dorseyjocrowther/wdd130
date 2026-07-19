@@ -1,0 +1,118 @@
+:root {
+    --pink: #EDAFD8; 
+    --tan: #F1E1D7;
+    --light-gray: #D2DBD2;
+    --sage-green: #BDCAB1;
+    --dark-gray: #4A5759;
+}
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    backgound-color: #F1E1D7;
+    color: var(dark-gray);
+    font-family: 'Candara', Arial, sans-serif;
+    line-height: 1.6;
+}
+h1, h2, h3, .logo {
+    font-family: 'Tangerine', cursiv, serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: var(--sage-green); 
+    padding: 1.5rem 2rem; 
+} 
+.logo { 
+    font-size: 2rem; 
+    color: var(--dark-gray); 
+} 
+nav a { 
+    text-decoration: none; 
+    color: var(--dark-gray); 
+    margin-left: 1.5rem; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+} 
+nav a:hover { 
+    color: var(--pink); 
+}
+main { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 2rem; 
+} 
+.hero { 
+    margin-bottom: 3rem; 
+}
+.about-me { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: center; 
+    background-color: var(--light-gray); 
+    padding: 2rem; 
+    border-radius: 8px; 
+    margin-bottom: 4rem; 
+} 
+.about-me img { 
+    width: 100%; 
+    height: auto; 
+    border: 2px solid var(--dark-gray); 
+    border-radius: 4px; 
+}
+.projects h2 { 
+    font-size: 2.5rem; 
+    margin-bottom: 1.5rem; 
+    border-bottom: 2px solid var(--sage-green); 
+    padding-bottom: 0.5rem; 
+} 
+.projects-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+} 
+.project-card { 
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: white; 
+    border: 1px solid var(--light-gray); 
+    border-radius: 6px; 
+    padding: 1rem; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+} 
+.project-info {
+    flex: 0 0 150px;
+}
+.project-card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+    margin-bottom: 1rem; 
+} 
+.project-card h3 { 
+    font-size: 1.5rem; 
+    margin-bottom: 0.5rem; 
+}
+footer { 
+    text-align: center; 
+    padding: 2rem; 
+    background-color: var(--dark-gray); 
+    color: var(--tan); 
+    margin-top: 4rem; 
+}
